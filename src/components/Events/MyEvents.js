@@ -14,7 +14,7 @@ const MyEvents = () => {
   useEffect(() => {
     const fetchRegisteredEvents = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/registered-events', {
+        const response = await axios.get('https://activitymanagement.up.railway.app/registered-events', {
           params: { email }
         });
         setEvents(response.data);
