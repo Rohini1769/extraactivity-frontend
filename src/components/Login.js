@@ -11,7 +11,7 @@ export default function Login() {
     const [showPassword, setShowPassword] = useState(false);
 
     function handleLogin() {
-        axios.post("http://localhost:8080/login", {
+        axios.post("https://activitymanagement.up.railway.app/login", {
             email,
             password,
         }).then((res) => {
