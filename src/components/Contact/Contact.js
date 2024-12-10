@@ -37,7 +37,7 @@ const Contact = () => {
       setIsSubmitting(true);
 
       // POST request
-      const response = await fetch("http://localhost:8080/addcomplaint", {
+      const response = await fetch("https://activitymanagement.up.railway.app/addcomplaint", {
         method: "POST",
         body: data,
       });
